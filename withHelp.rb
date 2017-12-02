@@ -36,6 +36,7 @@ def instructions
   puts "First enter you last and first name."
   puts "Then enter the amount of As, Bs, Cs, Ds, and Fs you got that term or school year."
   puts "If you got 0 of that grade you can either write nothing or a 0"
+  puts divide
 end
 
 puts gpaCalc
