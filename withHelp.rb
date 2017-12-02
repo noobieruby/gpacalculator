@@ -1,9 +1,10 @@
+$divide = " ****************************"
+
 def gpaCalc
   puts "\n Welcome to my GPA calculator"
-  divide = " ****************************"
-  puts divide
+  puts $divide
 
-  puts "Do you want instructions. (Y/N)"
+  puts "\nDo you want instructions. (Y/N)"
   ins = gets.chomp.upcase
 
   instructions if ins[0] == "Y"
@@ -28,15 +29,15 @@ def gpaCalc
 
   gpa = grade_weight.reduce(:+).to_f / grade_values.reduce(:+)
 
-  puts divide
-  puts "#{first.capitalize} #{last.capitalize}, your GPA is #{gpa.to_s} \n\n"
+  puts $divide
+  puts "\n#{first.capitalize} #{last.capitalize}, your GPA is #{gpa.to_s} \n\n"
 end
 
 def instructions
   puts "First enter you last and first name."
   puts "Then enter the amount of As, Bs, Cs, Ds, and Fs you got that term or school year."
   puts "If you got 0 of that grade you can either write nothing or a 0"
-  puts divide
+  puts $divide
 end
 
 puts gpaCalc
