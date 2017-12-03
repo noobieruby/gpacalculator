@@ -86,7 +86,7 @@ end
 # function then also puts out in the console.
 
 def results(values, weight)
-p  gpa = weight.reduce(:+).to_f / values.reduce(:+)
+  gpa = weight.reduce(:+).to_f / values.reduce(:+)
 
   puts $divide
   puts "\n#{$first.capitalize} #{$last.capitalize}, your GPA is #{gpa.to_s} \n\n"
