@@ -86,7 +86,7 @@ end
 # function then also puts out in the console.
 
 def results(values, weight)
-  gpa = weight.reduce(:+).to_f / values.reduce(:+)
+p  gpa = weight.reduce(:+).to_f / values.reduce(:+)
 
   puts $divide
   puts "\n#{$first.capitalize} #{$last.capitalize}, your GPA is #{gpa.to_s} \n\n"
@@ -104,15 +104,15 @@ end
 # in this version, we have to call     #
 # each function we cant to use. This   #
 # way of organizing our code becomes   #
-# very helpful as pragrams grow in     #
-# complexity, as it is easier to deal  #
+# very helpful as programs grow in     #
+# complexity. It is easier to deal     #
 # with individual methods/functions    #
 # than to dig through hundreds or      #
 # thousands or tens of thousands of    #
 # lines of code. Once a method has     #
 # been defined, it can be imported in  #
 # any other class or module of the     #
-# of the code base to be used.         #
+# code base to be used.                #
 ########################################
 
 puts greeting
