@@ -1,5 +1,5 @@
 ## Challenge
-- Learn to use ruby docs.
+- Learn to use ruby [docs](http://ruby-doc.org/).
 - Get familiar with IRB.
 - Find out about string manipulation in Ruby.
 
