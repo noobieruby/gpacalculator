@@ -16,7 +16,7 @@ This should open a command line that looks like this:
 ```
 
 ### GOALs
-Use the following methods in Ruby, by either typing them in RIB, or by writing a small script:
+Use the following methods in Ruby, by either typing them in IRB, or by writing a small script:
 - [.include?](https://ruby-doc.org/core-2.2.0/Array.html#method-i-include-3F)
 - [.strip](https://ruby-doc.org/core-2.2.0/String.html#method-i-strip)
 - [.sort](https://ruby-doc.org/core-2.2.0/Array.html#method-i-sort)
