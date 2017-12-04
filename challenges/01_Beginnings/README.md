@@ -8,6 +8,12 @@ IRB is a [REPL](http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loo
 ```bash
 irb
 ```
+...in your terminal.
+This should open a command line that looks like this:
+
+```bash
+[1] pry(main)>
+```
 
 ### GOALs
 Use the following methods in Ruby, by either typing them in RIB, or by writing a small script:
