@@ -10,5 +10,7 @@ The two looping methods in Ruby are:
 - for loops
 - while loops
 
+### Goal:
+
 Try to write two simple code examples, or if you can put both loops into one example. A good idea would be setting a range, counting
 through it in a for loop and then asking the user if he wants to go again, which would require a while loop to repeat.
