@@ -11,3 +11,4 @@ def result
 end
 
 puts greeting
+puts generate_die
