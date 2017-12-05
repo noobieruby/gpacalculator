@@ -1,12 +1,12 @@
 require 'date'
 
-puts "what date were you born M-D-Y"
+puts "what date were you born M-D-Y?"
 testdate = gets.chomp
 
 beginDate = Date.strptime(testdate, "%d-%m-%Y")
 
-endDate = Time.now.strftime("%d-%m-%Y")
+endDate = Time.now
 
-days = endDate - beginDate
+days = endDate.to_date - beginDate
 
-puts "#{days}"
+puts "You have lived #{days.to_i} days."
