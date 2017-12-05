@@ -1,0 +1,12 @@
+require 'date'
+
+puts "what date were you born M-D-Y"
+testdate = gets.chomp
+
+beginDate = Date.strptime(testdate, "%d-%m-%Y")
+
+endDate = Time.now.strftime("%d-%m-%Y")
+
+days = endDate - beginDate
+
+puts "#{days}"

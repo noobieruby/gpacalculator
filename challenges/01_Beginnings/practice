@@ -1,0 +1,42 @@
+$astrix = "************************"
+
+puts $astrix
+puts "Welcome to my dice simulator"
+puts $astrix
+
+randomdie = (1..6).to_a
+randomedieresult = randomdie.sample
+
+puts "in our computer simulation we roll a 6 sided die and it rolled #{randomedieresult}"
+
+puts "
+what number did you roll"
+dice = gets.chomp.strip
+  if dice.include?(1..6)
+
+    puts "roll your dice 5 times"
+
+    puts $astrix
+    puts "press eneter to roll 5 times"
+    roll = gets.chomp
+    randomedieresult = randomdie.sample
+    print "#{randomedieresult}"
+    randomedieresult = randomdie.sample
+    print "#{randomedieresult}"
+    randomedieresult = randomdie.sample
+    print "#{randomedieresult}"
+    randomedieresult = randomdie.sample
+    print "#{randomedieresult}"
+    randomedieresult = randomdie.sample
+    print "#{randomedieresult}"
+    puts $astrix
+
+    puts "write your results in order rolled"
+    roll5 = gets.chomp.to_s
+    roll5.sort!
+    big5 = roll5.size
+    reversednumbers = roll5.reverse!
+    puts "you got #{numbers} or #{reversednumbers} (reveresed) and your highest number was #{big5}"
+
+  else puts "something mustve went wrong"
+end

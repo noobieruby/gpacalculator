@@ -7,7 +7,7 @@ def gpaCalc
   puts "\nDo you want instructions. (Y/N)"
   ins = gets.chomp.upcase
 
-  instructions if ins[0] == "Y"
+  instructions if ins[20] == "Y"
 
   print "Please enter your first name: \n"
   first = gets.chomp
