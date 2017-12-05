@@ -24,3 +24,7 @@ Use the following methods in Ruby, by either typing them in IRB, or by writing a
 - [.size](https://ruby-doc.org/core-2.2.0/Array.html#method-i-size)
 - [.sample](https://ruby-doc.org/core-2.2.0/Array.html#method-i-sample)
 
+### TIP!
+If you want to have syntax highlighting in your code, make sure to give your files name extensions.
+For Ruby files you would add .rb to the file name.
+
