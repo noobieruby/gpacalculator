@@ -24,17 +24,25 @@ dice = gets.chomp.to_i
     randomedieresult = randomdie.sample
 
     for i in (1..5) do
-    puts die.sample
-end
+    puts die.sample          # ========> indentation is sloppy, also where do you define the variable "Die"?
+end                          # ========> why don't you use a variable that you have already defined earlier?
 
 
     puts "write your results in order rolled" # ok, I see what you are trying to do here, nice
     roll5 = gets.chomp.to_s                   # what type of variable are you creating here,
     reversednumbers = roll5.reverse!
     puts "you got #{numbers} or #{reversednumbers} (reveresed) and your highest number was #{big5}"
+    #### --> Where do you define the variables nambers and big5?
+
                                               # I like the idea, let's see how we can get this done
 
   else puts "something mustve went wrong"     # because of that error on line 15 you don't even get here,
-                                              # but if that error was not there, what would be the point o
+  ### You need to have an if statement to make an else condition...end then end it...just get rid of this one                                            # but if that error was not there, what would be the point o
                                               # point out (like... the number you have entered i                                              # something like that)
-end
+end ###
+    ####
+    #####
+    ###### ********** What does this end do here?
+    #######################
+
+    #### So yeah that's it, delete them "end"s, fix your variables and this should run fine
