@@ -4,7 +4,7 @@ puts astrix
 puts "Welcome to my dice simulator"
 puts astrix
 
-randomdie = (1..6).to_a                      # there is really no need to make an array out of this variable
+randomdie = (1..6).to_a                 # there is really no need to make an array out of this variable
                                         # ..or to even store it in a variable in the first place
 randomedieresult = randomdie.sample     # now you have a random Integer
 
@@ -24,7 +24,7 @@ dice = gets.chomp.to_i
     randomedieresult = randomdie.sample
 
     for i in (1..5) do
-    puts die.sample          # ========> indentation is sloppy, also where do you define the variable "Die"?
+    puts die.sample          # ========> indentation is sloppy, also where do you define the variable "die"?
 end                          # ========> why don't you use a variable that you have already defined earlier?
 
 
@@ -36,9 +36,9 @@ end                          # ========> why don't you use a variable that you h
 
                                               # I like the idea, let's see how we can get this done
 
-  else puts "something mustve went wrong"     # because of that error on line 15 you don't even get here,
-  ### You need to have an if statement to make an else condition...end then end it...just get rid of this one                                            # but if that error was not there, what would be the point o
-                                              # point out (like... the number you have entered i                                              # something like that)
+  else puts "something mustve went wrong"
+  ### You need to have an if statement to make an else condition...end then end it...just get rid of this one
+
 end ###
     ####
     #####
