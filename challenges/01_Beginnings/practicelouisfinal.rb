@@ -46,3 +46,4 @@ end ###
     #######################
 
     #### So yeah that's it, delete them "end"s, fix your variables and this should run fine
+    #### also, in order to use the .sort method just put your number string from line 32 in some square brackets and call [].sort on that
