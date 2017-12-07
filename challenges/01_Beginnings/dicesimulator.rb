@@ -33,3 +33,9 @@ reversednumbers = numbers.reverse
 big5 = numbers.length
 puts "you got #{numbers} or #{reversednumbers} reveresed and your highest number was #{big5}"
 puts "********************************************************************************"
+
+
+##########################
+##      Yay!            ##
+##   Great Work!        ##
+##########################
