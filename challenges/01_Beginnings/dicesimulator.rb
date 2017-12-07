@@ -1,7 +1,4 @@
-astrix = "************************"
-
 randomdie = (1..6).to_a
-
 randomedieresult = randomdie.sample
 
 puts "********************************************************************************
@@ -16,7 +13,7 @@ print "
 what number did you roll:  "
 dice = gets.chomp.to_i
 
-puts astrix
+puts "************************"
 puts "press enter to roll your dice 6 times"
 roll = gets.chomp
 randomedieresult = randomdie.sample
@@ -29,9 +26,10 @@ for i in (1..3) do
 end
 
 
-print "write your results in order rolled:  "
+print "write your results in order rolled (no spaces):  "
 roll5 = gets.chomp.to_s
-reversednumbers = roll5.reverse
-big5 = roll5.length
-puts "  you got #{roll5} or #{reversednumbers} (reveresed) and your highest number was #{big5}"
+numbers = roll5.split('').sort
+reversednumbers = numbers.reverse
+big5 = numbers.length
+puts "you got #{numbers} or #{reversednumbers} reveresed and your highest number was #{big5}"
 puts "********************************************************************************"
