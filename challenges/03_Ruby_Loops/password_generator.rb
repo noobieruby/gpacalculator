@@ -14,7 +14,7 @@ while ask != "n"
 end
 print " *
 **************#{astrixTotal}
-" }
+"}
   print "Do you want to make another password? [Y/N] "
   input = gets.chomp
   if input == ""
