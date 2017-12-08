@@ -19,9 +19,9 @@ seconds = days * 86400
 
 puts "
 *****************************
-* You have lived            *
-* #{years.to_i} years or               *
-* #{months.to_i} months or             *
+* You have lived           *
+* #{years.to_i} years or              *
+* #{months.to_i} months or            *
 * #{days.to_i} days or             *
 * #{mins.to_i} hours or         *
 * #{mins.to_i} minutes or       *
