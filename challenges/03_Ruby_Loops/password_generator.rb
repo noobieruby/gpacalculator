@@ -3,7 +3,7 @@ puts "**************************************************************************
                           Welcome to my password generator"
 ask = "no"
 while ask != "n"
-  1.times { print "how many digits you want your password? (type number): "
+  1.times { print "how long do you want your password? (type number): "
     answer = gets.chomp.to_i
     astrixTotal = astrix * answer
     puts "**************#{astrixTotal}"
