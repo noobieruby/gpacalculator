@@ -13,7 +13,7 @@ As these are common in most programming languages, let's look at some data-types
 Ruby, but yet quite unique in their usability when it comes to Ruby.
 
 - Ranges
-- Hashes
+- [Hashes](http://ruby-doc.org/core-2.4.2/Hash.html)
 - Symbols
 
 All these can be explored in IRB. In order to find out the data type of an object, just put the [.class](http://ruby-doc.org/core-2.4.2/Object.html#method-i-class) method on it:
