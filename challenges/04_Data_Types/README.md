@@ -40,7 +40,7 @@ All these can be explored in IRB. In order to find out the data type of an objec
 Try using some of these new data types in an example.
 
 You could write a function that asks for an input and then searches a hash you created to give a value back, kinda
-like a stupid dictianry that only knows a couple of words.
+like a stupid dictionary that only knows a couple of words.
 
 ### Extra Fun
 
