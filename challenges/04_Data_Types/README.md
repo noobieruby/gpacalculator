@@ -45,3 +45,17 @@ like a stupid dictionary that only knows a couple of words.
 ### Extra Fun
 
 Try writing a calculator that converts whole numbers into binary, octal and hex.
+
+### Even more Fun
+
+Use the hash in this folder to write a guessing game that asks for a state capital, then compares the answer.
+You can read from a hash like this:
+
+```bash
+[1] pry(main)> d = { :city => "New York" }
+=> {:city=>"New York"}
+[2] pry(main)> d[:city]
+=> "New York"
+```
+
+This should be all you need to complete this assignment...since you don't want to read the docs.
