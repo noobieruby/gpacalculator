@@ -59,3 +59,5 @@ You can read from a hash like this:
 ```
 
 This should be all you need to complete this assignment...since you don't want to read the docs.
+
+Don't forget to clean up your code.
