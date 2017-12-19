@@ -114,11 +114,11 @@ for i in(1..10)
 
 if answer == random
     puts "#{congradulation.sample}"
-  else puts "#{mistake}"            # why did you make a big ol array with all kinds of possible responses, but dont use the .sample
-  end                               # method to display a random one here, you did it with the positive response
+  else puts "#{mistake}"              # why did you make a big ol array with all kinds of possible responses, but dont use the .sample
+  end                                 # method to display a random one here, you did it with the positive response
 end
-puts "good work"                    # this line prints automatically after running the trivia 10 times, why is it always "good work"?
-                                    # what if the user messed up 10 times?
+puts "good work"                      # this line prints automatically after running the trivia 10 times, why is it always "good work"?
+                                      # what if the user messed up 10 times?
 else puts "thanks for using this tool"   # your indentation is messed up
 end
 
