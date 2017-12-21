@@ -2,6 +2,9 @@ congradulation = ["Keep it up", "Good work!","Well done!","Your a genius","Amazi
 
 mistake = ["ahh, almost, keep on trying","good try keep it up","thats not the correct answer but keep it going","wrong answer but you got this!"]
 
+# I like the two arrays of response possibilities
+# but writing this whole hash into the script is not the most efficient way, check out my parser.rb example and the csv that goes with it
+
 statesCapitals_hash = {"Alabama"=>"Montgomery",
  "Alaska"=>"Juneau",
  "Arizona"=>"Phoenix",
@@ -59,7 +62,7 @@ input2 = ["Montgomery","Juneau","Phoenix","Little Rock", "Sacramento","Denver","
 "Annapolis","Boston","Lansing","St. Paul","Jackson","Jefferson City", "Helena","Lincoln","Carson City","Concord",
 "Trenton","Santa Fe","Albany","Raleigh","Bismarck","Columbus","Oklahoma City","Salem","Harrisburg","Providence",
 "Columbia","Pierre","Nashville","Austin","Salt Lake City","Montpelier","Richmond","Olympia","Charleston","Madison",
-"Cheyenne"]
+"Cheyenne"]  # why did you create this array? You already have all the info in the hash
 
 capitals = ""
 
@@ -67,6 +70,9 @@ capitals = ""
 puts "********************************************************************************
                           Welcome to my Capital Finder"
 ask = "no"
+
+# there are a few curious things going on here, like why are you using the 1.times method? and why are there curly
+# brackets after the 1.times? there is no need for either and even though it works, it just looks messy
 
 while ask != "n"
 1.times {print "
@@ -82,13 +88,18 @@ end}
 print "
 do you want to find another capital? [Y/N]: "
 goodbyecruelworld = gets.chomp
-if goodbyecruelworld == ""
+if goodbyecruelworld == "" # --> nice way to catch an empty input
   ask = "y"
 else
   ask = goodbyecruelworld.downcase
 end
 end
 
+<<<<<<< HEAD
+=======
+# nice to break the hash exploration of the hash and the trivia up into two parts
+# but why are you only allowing the trivia to run through 10 times?
+>>>>>>> b22606db3e3fdd71c0f81f583b60cb22b635c2e9
 
 print "
 Would you like to play a capital trivia? [Y/N]:  "
@@ -102,18 +113,30 @@ for i in(1..10)
   puts "
 #{random} is what states capital?"
   trivia = gets.chomp.capitalize
-  statesCapitals_hash.include?(trivia)
+  statesCapitals_hash.include?(trivia) # Why did you write this line? What does it do, where do you use it and why do you need it?
   answer = statesCapitals_hash[trivia]
 
 if answer == random
+<<<<<<< HEAD
     puts "#{outputgood.join(', ')}"
   else puts "#{mistake}"
   end
+=======
+    puts "#{congradulation.sample}"
+  else puts "#{mistake}"              # why did you make a big ol array with all kinds of possible responses, but dont use the .sample
+  end                                 # method to display a random one here, you did it with the positive response
+>>>>>>> b22606db3e3fdd71c0f81f583b60cb22b635c2e9
 end
-puts "good work"
-
-else puts "thanks for using this tool"
+puts "good work"                      # this line prints automatically after running the trivia 10 times, why is it always "good work"?
+                                      # what if the user messed up 10 times?
+else puts "thanks for using this tool"   # your indentation is messed up
 end
 
 print "
 ********************************************************************************"
+
+# SO yeah, I guess you did solve the requirements, but this is pretty messy.
+# I uploaded another example and even though it is a bit more advanced in the way it reads the hash try to read through it and
+# see how it could help you to clean up your code. You really should try to understand everything your script is doing here, right
+# now it does not look like it. Don't be shy to google. I think it is great that you found the right syntax to read your hash on lines
+# 83 and 113, but you could have gotten this solution from the ruby docs I linked in the README.md
