@@ -52,3 +52,8 @@ statesCapitals_hash = {
 
 states = ""
 capitals = ""
+
+puts "write a state"
+states = gets.chomp
+
+statesCapitals_hash.each {|key, value| puts "#{states} is #{value}" }
