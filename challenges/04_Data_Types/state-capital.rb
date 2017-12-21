@@ -56,16 +56,8 @@ statesCapitals_hash = {"Alabama"=>"Montgomery",
  "Wisconsin"=>"Madison",
  "Wyoming"=>"Cheyenne"}
 
-input = ""
-input2 = ["Montgomery","Juneau","Phoenix","Little Rock", "Sacramento","Denver","Hartford","Dover","Tallahassee",
-"Atlanta","Honolulu","Boise","Springfield","Indianapolis","Des Moines","Topeka","Frankfort","Baton Rouge","Augusta",
-"Annapolis","Boston","Lansing","St. Paul","Jackson","Jefferson City", "Helena","Lincoln","Carson City","Concord",
-"Trenton","Santa Fe","Albany","Raleigh","Bismarck","Columbus","Oklahoma City","Salem","Harrisburg","Providence",
-"Columbia","Pierre","Nashville","Austin","Salt Lake City","Montpelier","Richmond","Olympia","Charleston","Madison",
-"Cheyenne"]  # why did you create this array? You already have all the info in the hash
-
+states = ""
 capitals = ""
-
 
 puts "********************************************************************************
                           Welcome to my Capital Finder"
