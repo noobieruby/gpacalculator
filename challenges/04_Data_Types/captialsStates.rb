@@ -50,10 +50,11 @@ statesCapitals_hash = {
  "Wisconsin"=>"Madison",
  "Wyoming"=>"Cheyenne"}
 
-states = ""
-capitals = ""
+capitals = []
 
 puts "write a state"
-states = gets.chomp
+state = gets.chomp
 
-statesCapitals_hash.each {|key, value| puts "#{states} is #{value}" }
+puts "The capital of #{state} is #{statesCapitals_hash[state]}"
+
+# statesCapitals_hash.each {|key, value| puts "#{states} is #{value}" }
