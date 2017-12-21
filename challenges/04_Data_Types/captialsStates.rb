@@ -55,10 +55,20 @@ capitals = []
 puts "write a state"
 state = gets.chomp
 
-puts "The capital of #{state} is #{statesCapitals_hash[state]}"
+puts "The capital of #{state} is #{statesCapitals_hash[state]}."
 
 # statesCapitals_hash.each {|key, value| puts "#{states} is #{value}" }
 
 # if you want to create an array with all the capitals, you can use the same syntax you tried on line 60
 # just push your results into the array instead of putting them out to the console with whatever you wrote into the
 # states variable
+
+random_state = statesCapitals_hash.keys.to_a.sample
+puts "What is the capital of #{random_state}?"
+ans = gets.chomp
+
+if ans == statesCapitals_hash[random_state]
+  puts "great answer"
+else
+  puts "you suck, go and read some books"
+end
