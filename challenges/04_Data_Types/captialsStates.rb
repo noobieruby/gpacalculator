@@ -63,12 +63,27 @@ puts "The capital of #{state} is #{statesCapitals_hash[state]}."
 # just push your results into the array instead of putting them out to the console with whatever you wrote into the
 # states variable
 
-random_state = statesCapitals_hash.keys.to_a.sample
-puts "What is the capital of #{random_state}?"
-ans = gets.chomp
+again = 'y'
 
-if ans == statesCapitals_hash[random_state]
-  puts "great answer"
-else
-  puts "you suck, go and read some books"
+while again[0].upcase != 'N'
+  random_state = statesCapitals_hash.keys.to_a.sample
+  puts "What is the capital of #{random_state}?"
+  ans = gets.chomp
+  if ans == statesCapitals_hash[random_state]
+    puts "great answer"
+  else
+    puts "you suck, go and read some books"
+  end
+  puts "you wanna go again?(y/n)"
+  again = gets.chomp
+
+  if again == ''
+    again = 'n'
+    puts "no input means no ; )"
+  end
+
+  while again[0].downcase != 'y' and again[0].downcase != 'n'
+    puts "please enter y or n"
+    again = gets.chomp
+  end
 end
