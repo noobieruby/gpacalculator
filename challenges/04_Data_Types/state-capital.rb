@@ -90,7 +90,6 @@ end
 end
 
 
-
 print "
 Would you like to play a capital trivia? [Y/N]:  "
 yes = gets.chomp.upcase
@@ -99,14 +98,15 @@ if yes == "Y"
 
 for i in(1..10)
   random = input2.sample
+  outputgood = congradulation.sample
   puts "
-  #{random} is what states capital?"
+#{random} is what states capital?"
   trivia = gets.chomp.capitalize
   statesCapitals_hash.include?(trivia)
   answer = statesCapitals_hash[trivia]
 
 if answer == random
-    puts "#{congradulation.sample}"
+    puts "#{outputgood.join(', ')}"
   else puts "#{mistake}"
   end
 end
