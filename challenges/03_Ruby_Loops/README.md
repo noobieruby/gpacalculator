@@ -24,7 +24,7 @@ ruby arrays.rb
 
 What do you want to search for?
 Something
-sorry the array does not contain your search value.
+Sorry the array does not contain your search value.
 
 ```
 
