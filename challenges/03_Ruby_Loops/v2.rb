@@ -8,7 +8,7 @@ answerPostive = []
 
 array.each do |element|
 if element == find
-  answerPositive << []
+  answerPositive << yes
 end
 end
 
