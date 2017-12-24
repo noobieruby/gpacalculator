@@ -11,8 +11,11 @@ end
 
 puts "Original array => #{array}"
 
-puts "The map method returns: "
-map_method(array)
+puts "The each method returns: "
+dot_each_method(array)
 
 puts "the map method returns: "
-dot_each_method(array)
+map_method(array)
+
+puts "Now the array looks like this:"
+puts "#{array}"
