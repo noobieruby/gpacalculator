@@ -4,10 +4,11 @@ array = ["random", "something", "green", "red", 23, 54, 555, 1, ["more stuff", 1
 puts "What do you want to search for?"
 find = gets.chomp
 
+answerPostive = []
+x$
 array.each do |element|
 if element == find
-  answerPositive == "yes"
-else print ""
+  answerPositive << []
 end
 end
 
