@@ -1,7 +1,7 @@
 array = ["stuff", "more stuff", "red", "green", "yellow", 1, 2, 3, 4]
 
 def map_method(ary)
-  # Use the .map! method and the 'OR' operator to remove all colors from the array
+  # Use the .map! method and the 'AND' operator to remove all colors from the array
 end
 
 def dot_each_method(ary)
