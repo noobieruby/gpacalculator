@@ -9,3 +9,8 @@ can be helpful when trying to keep your code lean.
 
 In the map.rb file use both methods and compare the output to get a better undertanding for the
 different methods.
+
+### Operators
+
+Read up on [Ruby logic operators](https://www.tutorialspoint.com/ruby/ruby_operators.htm).
+The syntax is not important, but I encourage you to learn ||, &&, !, as these are pretty standard.
