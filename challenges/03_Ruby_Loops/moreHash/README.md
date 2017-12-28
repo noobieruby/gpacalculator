@@ -8,4 +8,9 @@ method which returns a boolean that lets us know if the value is in the array or
 
 Write a method that searches the keys of a hash for the "required" keys given in the array.
 If one of the "required" keys from inside the array is missing in the hash, return a message
-that reads: "The key: <name of the key> is missing in the hash".
+that reads: "The key: (name of the key) is missing in the hash".
+
+### Requirements
+
+Even though there is a really nice and easy way to solve this, try to write a method that iterates over the array
+and checks each key individually with the .include method.
